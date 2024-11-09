@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Invalid - VoidWeb</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            background: #000;
+            overflow: hidden;
+        }
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://placehold.co/1920x1080/000000/FFFFFF/png?text=Interactive+dark+background+with+abstract+patterns') no-repeat center center/cover;
+            z-index: -1;
+            animation: moveBackground 20s linear infinite;
+        }
+        @keyframes moveBackground {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+        .error-content {
+            max-width: 600px;
+            width: 100%;
+        }
+        .error-title {
+            font-size: 4rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .error-title i {
+            margin-right: 10px;
+        }
+        .error-message {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+        .tips {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+        .tips i {
+            margin-right: 10px;
+        }
+        @media (max-width: 768px) {
+            .error-title {
+                font-size: 2.5rem;
+            }
+            .error-message {
+                font-size: 1.2rem;
+            }
+            .tips {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="error-content">
+            <h1 class="error-title"><i class="fas fa-exclamation-triangle"></i> Domain Invalid</h1>
+            <p class="error-message">The domain you are trying to access is invalid in VoidWeb.</p>
+            <div class="tips">
+                <p><i class="fas fa-check-circle"></i> Verify the domain name you entered is correct.</p>
+                <p><i class="fas fa-search"></i> Use a search engine to find the correct domain.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
